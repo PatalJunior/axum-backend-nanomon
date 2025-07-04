@@ -1,0 +1,54 @@
+---
+description: 
+globs: src/**
+alwaysApply: false
+---
+# Coding Pattern Preferences
+
+## Core Principles
+
+- **Simplicity First**: Always prefer simple, straightforward solutions over complex ones
+- **DRY (Don't Repeat Yourself)**: Check existing codebase for similar functionality before implementing new code
+- **Environment Awareness**: Write code that works across dev, test, and prod environments
+- **Focused Changes**: Only make changes that are explicitly requested or clearly related to the current task
+- **Clean Code**: Maintain a clean, organized codebase with clear structure and naming
+
+## Code Organization
+
+- **File Size**: Keep files under 200-300 lines. Refactor when approaching this limit
+- **Script Management**: Avoid one-off scripts in code files. Use dedicated script files or tools
+- **Configuration**: Be mindful of configuration size and complexity to optimize token usage
+
+## Data Handling
+
+- **Mocking**: 
+  - Only use mock data in test environments
+  - Never include mock data in dev or prod code
+  - Avoid fake data patterns in production code
+
+## Environment Management
+
+- **Environment Files**: Never modify .env files without explicit permission
+- **Configuration**: Keep environment-specific configuration minimal and well-documented
+
+## Best Practices
+
+1. **Code Reuse**:
+   - Check for existing implementations before writing new code
+   - Extract common functionality into shared utilities
+   - Use established patterns from the codebase
+
+2. **Refactoring**:
+   - When introducing new patterns, remove old implementations
+   - Keep the codebase clean by removing unused code
+   - Document significant architectural changes
+
+3. **Testing**:
+   - Write tests for new functionality
+   - Use appropriate mocking strategies in tests only
+   - Maintain test coverage for critical paths
+
+4. **Documentation**:
+   - Document complex logic and architectural decisions
+   - Keep documentation up to date with code changes
+   - Use clear, concise comments where necessary

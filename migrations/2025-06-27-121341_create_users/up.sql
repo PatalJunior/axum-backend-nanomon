@@ -1,0 +1,9 @@
+CREATE TABLE users
+(
+id uuid PRIMARY KEY DEFAULT uuid_generate_v4 (),
+username VARCHAR NOT NULL,
+email VARCHAR NOT NULL,
+password_hash TEXT NOT NULL,
+is_admin BOOLEAN NOT NULL DEFAULT FALSE,
+created_at DATE NOT NULL DEFAULT CURRENT_DATE
+)
